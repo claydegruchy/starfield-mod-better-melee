@@ -394,7 +394,7 @@
 		</row>
 		<row>
 			<prop> <type>2</type> <value>Transition Type</value> </prop>
-			<prop> <type>2</type> <value>Smooth</value> <listindex>0</listindex> </prop>
+			<prop> <type>2</type> <value>Smooth</value> <listindex>10</listindex> </prop>
 		</row>
 	</property_sheet>
 		</link>
