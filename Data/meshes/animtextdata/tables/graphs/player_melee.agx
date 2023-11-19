@@ -1,0 +1,4200 @@
+<root>
+<Name>Data\Meshes\AnimTextData\Tables\Graphs\Player_Melee.agx</Name>
+<Category>Player</Category>
+<Link_Style>0</Link_Style>
+<node>
+	<node_type>NT_MERGE_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Merge</name>
+	<pos_x>3775</pos_x>
+	<pos_y>543</pos_y>
+	<expanded_pos_x>3775</expanded_pos_x>
+	<expanded_pos_y>543</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>9b91c647-4920-452b-8a04-c3d9ce595217</guid>
+	<input> <name>Input1</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>46</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Input2</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>2</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>input3</name> <id>4</id> <idx>2</idx>
+
+		<link>
+			<node>19</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Merge Node</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_ASSIGN_VARIABLE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Assign Variable</name>
+	<pos_x>3607</pos_x>
+	<pos_y>583</pos_y>
+	<expanded_pos_x>3607</expanded_pos_x>
+	<expanded_pos_y>583</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>98d30191-e228-4ac6-b161-8d456acf5c64</guid>
+	<input> <name>passthrough</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>47</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>2</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>iState Default</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Operation</value> </prop>
+			<prop> <type>2</type> <value>Assign</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Only Assign Once</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>3</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Variable Name</header> <types>5</types> </column>
+		<column> <header>Assigned Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>0</type> <value>iState</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_SWITCH_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Switch</name>
+	<pos_x>3071</pos_x>
+	<pos_y>591</pos_y>
+	<expanded_pos_x>3071</expanded_pos_x>
+	<expanded_pos_y>591</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>c0e1f640-d436-452b-8f81-ca65f1f4df0e</guid>
+	<input> <name>NoMantle</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>5</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Mantle</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>18</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Mantle</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Name</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Type</value> </prop>
+			<prop> <type>2</type> <value>Event</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Max Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Randomize If Invalid</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Tag Alteration</value> </prop>
+			<prop> <type>2</type> <value>Do Nothing</value> <listindex>0</listindex> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>6</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Def.</header> <types>3</types> </column>
+		<column> <header>SM Evt</header> <types>3</types> </column>
+		<column> <header>Param</header> <types>0</types> </column>
+		<column> <header>Tag</header> <types>2</types> </column>
+		<column> <header>Event List</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value>NoMantle</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>MantleEnd,MantleCancel</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Mantle</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>0</type> <value>1</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>MantleStart</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_DUAL_DIRECT_AT</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Dual Direct At</name>
+	<pos_x>1583</pos_x>
+	<pos_y>543</pos_y>
+	<expanded_pos_x>1583</expanded_pos_x>
+	<expanded_pos_y>543</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>cd80cb04-ff72-4269-90ba-5538e6ca6abf</guid>
+	<input> <name>passthrough</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>6</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Chest</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>13</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Head</name> <id>3</id> <idx>2</idx>
+
+		<link>
+			<node>14</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>4</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Dual Direct At</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Source Bone</value> </prop>
+			<prop> <type>2</type> <value>DirectAt</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Chest Location Bone</value> </prop>
+			<prop> <type>2</type> <value>C_Chest</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Chest Axis Index</value> </prop>
+			<prop> <type>0</type> <value>1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Head Location Bone</value> </prop>
+			<prop> <type>2</type> <value>C_Head</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Aim Vector Variable</value> </prop>
+			<prop> <type>4</type> <value>AimAtLocation</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Look Vector Variable</value> </prop>
+			<prop> <type>4</type> <value>LookAtLocation</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Heading Delta Variable</value> </prop>
+			<prop> <type>1</type> <value>DirectAt Heading Delta</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>No Head Track Variable</value> </prop>
+			<prop> <type>0</type> <value>bNoHeadTrack</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>No Aim Variable</value> </prop>
+			<prop> <type>0</type> <value>bNoAim</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Aim Heading Offset Output</value> </prop>
+			<prop> <type>1</type> <value>DirectAtHeadingVar</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Aim Pitch Offset Output</value> </prop>
+			<prop> <type>1</type> <value>DirectAtPitchVar</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Heading Offset Output</value> </prop>
+			<prop> <type>1</type> <value>LookAtHeadingVar</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Pitch Offset Output</value> </prop>
+			<prop> <type>1</type> <value>LookAtPitchVar</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Is Head Tracking Active Variable</value> </prop>
+			<prop> <type>3</type> <value>bHeadTrackingActive</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Is Aim Active Variable</value> </prop>
+			<prop> <type>3</type> <value>bAimActive</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Lag Degrees</value> </prop>
+			<prop> <type>1</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Head Lag Degrees</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Blend Rate</value> </prop>
+			<prop> <type>1</type> <value>0.25</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Head Blend Rate</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Chest Full Blend Max Angle</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Rotate Head Before Chest</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Disable Heading Min</value> </prop>
+			<prop> <type>1</type> <value>-90</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Disable Heading Max</value> </prop>
+			<prop> <type>1</type> <value>90</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Disable Heading Hysteresis</value> </prop>
+			<prop> <type>1</type> <value>15</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>5</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>C Heading Min</header> <types>1</types> </column>
+		<column> <header>C Heading Max</header> <types>1</types> </column>
+		<column> <header>C Pitch Min</header> <types>1</types> </column>
+		<column> <header>C Pitch Max</header> <types>1</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Chest</value> </prop>
+			<prop> <type>1</type> <value>-63</value> </prop>
+			<prop> <type>1</type> <value>63</value> </prop>
+			<prop> <type>1</type> <value>-86</value> </prop>
+			<prop> <type>1</type> <value>86</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Head</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>8</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Bone Name</header> <types>2</types> </column>
+		<column> <header>Min X</header> <types>1</types> </column>
+		<column> <header>Max X</header> <types>1</types> </column>
+		<column> <header>Min Y</header> <types>1</types> </column>
+		<column> <header>Max Y</header> <types>1</types> </column>
+		<column> <header>Min Z</header> <types>1</types> </column>
+		<column> <header>Max Z</header> <types>1</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>C_Head</value> </prop>
+			<prop> <type>1</type> <value>-45</value> </prop>
+			<prop> <type>1</type> <value>45</value> </prop>
+			<prop> <type>1</type> <value>-40</value> </prop>
+			<prop> <type>1</type> <value>40</value> </prop>
+			<prop> <type>1</type> <value>-40</value> </prop>
+			<prop> <type>1</type> <value>40</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>C_Neck1</value> </prop>
+			<prop> <type>1</type> <value>-30</value> </prop>
+			<prop> <type>1</type> <value>30</value> </prop>
+			<prop> <type>1</type> <value>-40</value> </prop>
+			<prop> <type>1</type> <value>40</value> </prop>
+			<prop> <type>1</type> <value>-40</value> </prop>
+			<prop> <type>1</type> <value>40</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>C_Neck</value> </prop>
+			<prop> <type>1</type> <value>-15</value> </prop>
+			<prop> <type>1</type> <value>15</value> </prop>
+			<prop> <type>1</type> <value>-40</value> </prop>
+			<prop> <type>1</type> <value>40</value> </prop>
+			<prop> <type>1</type> <value>-40</value> </prop>
+			<prop> <type>1</type> <value>40</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_SWITCH_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Switch</name>
+	<pos_x>2895</pos_x>
+	<pos_y>591</pos_y>
+	<expanded_pos_x>2895</expanded_pos_x>
+	<expanded_pos_y>591</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>395d10a3-4833-4514-9512-24f973d3e523</guid>
+	<input> <name>Normal</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>32</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Ladder</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>12</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>TraversalState</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Name</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Type</value> </prop>
+			<prop> <type>2</type> <value>Event</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Max Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.3</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Randomize If Invalid</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Tag Alteration</value> </prop>
+			<prop> <type>2</type> <value>Do Nothing</value> <listindex>0</listindex> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>6</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Def.</header> <types>3</types> </column>
+		<column> <header>SM Evt</header> <types>3</types> </column>
+		<column> <header>Param</header> <types>0</types> </column>
+		<column> <header>Tag</header> <types>2</types> </column>
+		<column> <header>Event List</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Normal</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>LadderEnd</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Ladder</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>0</type> <value>1</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>LadderEnterClimbUp,LadderEnterClimbDown</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_SWITCH_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Switch</name>
+	<pos_x>1383</pos_x>
+	<pos_y>599</pos_y>
+	<expanded_pos_x>1383</expanded_pos_x>
+	<expanded_pos_y>599</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>9deb4908-39cc-4c09-aa8b-0c0d89442061</guid>
+	<input> <name>NoScene</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>7</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Scene</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>11</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Switch</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Name</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Type</value> </prop>
+			<prop> <type>2</type> <value>Event</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Max Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.3</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Randomize If Invalid</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Tag Alteration</value> </prop>
+			<prop> <type>2</type> <value>Do Nothing</value> <listindex>0</listindex> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>6</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Def.</header> <types>3</types> </column>
+		<column> <header>SM Evt</header> <types>3</types> </column>
+		<column> <header>Param</header> <types>0</types> </column>
+		<column> <header>Tag</header> <types>2</types> </column>
+		<column> <header>Event List</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value>NoScene</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>SceneEnd</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Scene</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+			<prop> <type>0</type> <value>1</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_BLEND_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<divisions>0</divisions>
+	<blendInput>
+	</blendInput>
+	<blendInput>
+	</blendInput>
+	<name>Blend</name>
+	<pos_x>1223</pos_x>
+	<pos_y>599</pos_y>
+	<expanded_pos_x>1223</expanded_pos_x>
+	<expanded_pos_y>599</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>85c46d2e-1326-4652-93c8-7008f1862480</guid>
+	<input> <name>Idle</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>42</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Flinch</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>10</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>HitReaction</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Name</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Type</value> </prop>
+			<prop> <type>2</type> <value>Layer</value> <listindex>2</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Variable</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Input Lock Time</value> </prop>
+			<prop> <type>1</type> <value>-1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Range Min</value> </prop>
+			<prop> <type>1</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Range Max</value> </prop>
+			<prop> <type>1</type> <value>1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Wrap To Range</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Max Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Normalize Weights</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Only Highest Weight Active</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>5</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Param</header> <types>1</types> </column>
+		<column> <header>SM Evt</header> <types>3</types> </column>
+		<column> <header>Enable Events</header> <types>2</types> </column>
+		<column> <header>Disable Events</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Idle</value> </prop>
+			<prop> <type>1</type> <value>1</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Flinch</value> </prop>
+			<prop> <type>1</type> <value>0</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>FlinchEnd</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_GRAPH_REF</node_type>
+	<noninstanced>False</noninstanced>
+	<name>State Machine Embedded</name>
+	<pos_x>553</pos_x>
+	<pos_y>687</pos_y>
+	<expanded_pos_x>553</expanded_pos_x>
+	<expanded_pos_y>687</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>False</collapsed>
+	<guid>67ed2464-6767-48b1-bb85-6646d2af9c18</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<output> <name>Out</name> <id>2</id> <idx>1</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Graph Ref</value> </prop>
+			<prop> <type>2</type> <value>MeleeActions</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Wrapped Graph</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_GRAPH_REF</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Graph Reference</name>
+	<pos_x>745</pos_x>
+	<pos_y>855</pos_y>
+	<expanded_pos_x>745</expanded_pos_x>
+	<expanded_pos_y>855</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>c1bff90b-cfad-45f6-bf9c-280c7441e8a1</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Graph Ref</value> </prop>
+			<prop> <type>2</type> <value>MeleeAttacks</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Wrapped Graph</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_STATE_MACHINE_EMBEDDED</node_type>
+	<noninstanced>False</noninstanced>
+	<name>State Machine Embedded</name>
+	<pos_x>1185</pos_x>
+	<pos_y>887</pos_y>
+	<expanded_pos_x>1185</expanded_pos_x>
+	<expanded_pos_y>879</expanded_pos_y>
+	<use_color_2>True</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>False</collapsed>
+	<guid>97c6ebe9-3711-4933-9bfc-4d206f45a153</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>State Machine Name</value> </prop>
+			<prop> <type>2</type> <value>HitReaction</value> </prop>
+		</row>
+	</property_sheet>
+<graph>
+<Link_Style>1</Link_Style>
+<node>
+<default_state>True</default_state>
+	<node_type>NT_ANIMATION_IMPACT_SELECTOR</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Animation Impact Selector</name>
+	<pos_x>71</pos_x>
+	<pos_y>55</pos_y>
+	<expanded_pos_x>71</expanded_pos_x>
+	<expanded_pos_y>55</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>7d97ef45-e64a-4798-8fcc-22e1caa8dc12</guid>
+	<input> <name></name> <id>2</id> <idx>0</idx>
+
+		<link>
+			<node>1</node> <output>0</output> <hidden>False</hidden>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Event</value> </prop>
+			<prop> <type>2</type> <value>FlinchStart</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Comment</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Condition</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Priority</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Allow Self Transition</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Do Not Follow Sync Group</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Transition Type</value> </prop>
+			<prop> <type>2</type> <value>Smooth</value> <listindex>0</listindex> </prop>
+		</row>
+	</property_sheet>
+		</link>
+ </input>
+	<output> <name></name> <id>1</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Flinch Selector</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Body Part Var</value> </prop>
+			<prop> <type>0</type> <value>cHitReactionBodyPart</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Direction Var</value> </prop>
+			<prop> <type>0</type> <value>cHitReactionDir</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Impact Var</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Only Transition Out</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Forward Tag Name</header> <types>2</types> </column>
+		<column> <header>Body Part</header> <types>2</types> </column>
+		<column> <header>Impact</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_Head</value> </prop>
+			<prop> <type>2</type> <value>HEAD_1</value> <listindex>1</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_LeftArm</value> </prop>
+			<prop> <type>2</type> <value>LEFT_ARM_1</value> <listindex>6</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_LeftLeg</value> </prop>
+			<prop> <type>2</type> <value>LEFT_LEG_1</value> <listindex>10</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_RightArm</value> </prop>
+			<prop> <type>2</type> <value>RIGHT_ARM_1</value> <listindex>8</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_RightLeg</value> </prop>
+			<prop> <type>2</type> <value>RIGHT_LEG_1</value> <listindex>13</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_Torso</value> </prop>
+			<prop> <type>2</type> <value>TORSO</value> <listindex>0</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Left Tag Name</header> <types>2</types> </column>
+		<column> <header>Body Part</header> <types>2</types> </column>
+		<column> <header>Impact</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_Head_Left</value> </prop>
+			<prop> <type>2</type> <value>HEAD_1</value> <listindex>1</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_LeftArm_Left</value> </prop>
+			<prop> <type>2</type> <value>LEFT_ARM_1</value> <listindex>6</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_LeftLeg_Left</value> </prop>
+			<prop> <type>2</type> <value>LEFT_LEG_1</value> <listindex>10</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_RightArm_Left</value> </prop>
+			<prop> <type>2</type> <value>RIGHT_ARM_1</value> <listindex>8</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_RightLeg_Left</value> </prop>
+			<prop> <type>2</type> <value>RIGHT_LEG_1</value> <listindex>13</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_Torso_Left</value> </prop>
+			<prop> <type>2</type> <value>TORSO</value> <listindex>0</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Back Tag Name</header> <types>2</types> </column>
+		<column> <header>Body Part</header> <types>2</types> </column>
+		<column> <header>Impact</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_Head_Backward</value> </prop>
+			<prop> <type>2</type> <value>HEAD_1</value> <listindex>1</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_LeftArm_Backward</value> </prop>
+			<prop> <type>2</type> <value>LEFT_ARM_1</value> <listindex>6</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_LeftLeg_Backward</value> </prop>
+			<prop> <type>2</type> <value>LEFT_LEG_1</value> <listindex>10</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_RightArm_Backward</value> </prop>
+			<prop> <type>2</type> <value>RIGHT_ARM_1</value> <listindex>8</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_RightLeg_Backward</value> </prop>
+			<prop> <type>2</type> <value>RIGHT_LEG_1</value> <listindex>13</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_Torso_Backward</value> </prop>
+			<prop> <type>2</type> <value>TORSO</value> <listindex>0</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Right Tag Name</header> <types>2</types> </column>
+		<column> <header>Body Part</header> <types>2</types> </column>
+		<column> <header>Impact</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_Head_Right</value> </prop>
+			<prop> <type>2</type> <value>HEAD_1</value> <listindex>1</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_LeftArm_Right</value> </prop>
+			<prop> <type>2</type> <value>LEFT_ARM_1</value> <listindex>6</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_LeftLeg_Right</value> </prop>
+			<prop> <type>2</type> <value>LEFT_LEG_1</value> <listindex>10</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_RightArm_Right</value> </prop>
+			<prop> <type>2</type> <value>RIGHT_ARM_1</value> <listindex>8</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_RightLeg_Right</value> </prop>
+			<prop> <type>2</type> <value>RIGHT_LEG_1</value> <listindex>13</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch_Torso_Right</value> </prop>
+			<prop> <type>2</type> <value>TORSO</value> <listindex>0</listindex> </prop>
+			<prop> <type>2</type> <value>Small</value> <listindex>0</listindex> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Enter Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Exit Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+</node>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Start Selection Method</value> </prop>
+			<prop> <type>2</type> <value>Default</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Start Selection Variable</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Maintain Sync Selection Variable When Exiting</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Update While Inactive</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>3</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>State Name</header> <types>2</types> </column>
+		<column> <header>Node ID</header> <types>0</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Flinch Selector</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Enter Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Exit Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>3</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Swap Graph Events</header> <types>2</types> </column>
+		<column> <header>Blend Time</header> <types>1</types> </column>
+	</property_sheet>
+</graph>
+</node>
+<node>
+	<node_type>NT_STATE_MACHINE_EMBEDDED</node_type>
+	<noninstanced>False</noninstanced>
+	<name>State Machine Embedded</name>
+	<pos_x>1393</pos_x>
+	<pos_y>775</pos_y>
+	<expanded_pos_x>1393</expanded_pos_x>
+	<expanded_pos_y>775</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>ccf4314a-4948-4170-811b-92ce9756e31e</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>State Machine Name</value> </prop>
+			<prop> <type>2</type> <value>DynamicSceneState</value> </prop>
+		</row>
+	</property_sheet>
+<graph>
+<Link_Style>1</Link_Style>
+<node>
+	<node_type>NT_ANIMATION_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Animation</name>
+	<pos_x>247</pos_x>
+	<pos_y>63</pos_y>
+	<expanded_pos_x>247</expanded_pos_x>
+	<expanded_pos_y>63</expanded_pos_y>
+	<use_color_2>True</use_color_2>
+	<user_id>1</user_id>
+	<collapsed>True</collapsed>
+	<guid>8cc52663-f5ff-4f87-96d0-2714bacc4640</guid>
+	<input> <name></name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>2</node> <output>2</output> <hidden>False</hidden>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Event</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Comment</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Condition</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.3</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Priority</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Allow Self Transition</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Do Not Follow Sync Group</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Transition Type</value> </prop>
+			<prop> <type>2</type> <value>Smooth</value> <listindex>0</listindex> </prop>
+		</row>
+	</property_sheet>
+		</link>
+ </input>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>TagName</value> </prop>
+			<prop> <type>2</type> <value>None</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync System</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Slave</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Send Event On End</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>State Variable</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>State Variable Ref Count</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Update Ref Count When Inactive</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Speed Multiplier</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Speed Multiplier Is Duration</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Crop Start Frames</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Crop End Frames</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Randomize Start Point</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Mirror</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Process Inactive Events</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Control</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Only Transition Out</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Enter Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>2</type> <value>SceneEnd</value> </prop>
+			<prop> <type>2</type> <value>$TransitionTime$</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Exit Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+</node>
+<node>
+<default_state>True</default_state>
+	<node_type>NT_DYNAMIC_ANIMATION</node_type>
+	<noninstanced>False</noninstanced>
+	<flags><flag>Animation Driven</flag></flags>
+	<name>Dynamic Animation</name>
+	<pos_x>71</pos_x>
+	<pos_y>63</pos_y>
+	<expanded_pos_x>71</expanded_pos_x>
+	<expanded_pos_y>63</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>a38d12f3-5aed-415f-a161-3e358e52aba9</guid>
+	<input> <name></name> <id>4</id> <idx>0</idx>
+
+		<link>
+			<node>2</node> <output>0</output> <hidden>False</hidden>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Event</value> </prop>
+			<prop> <type>2</type> <value>DynamicScene</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Comment</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Condition</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.3</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Priority</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Allow Self Transition</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Do Not Follow Sync Group</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Transition Type</value> </prop>
+			<prop> <type>2</type> <value>Smooth</value> <listindex>0</listindex> </prop>
+		</row>
+	</property_sheet>
+		</link>
+ </input>
+	<output> <name></name> <id>3</id> <idx>0</idx>
+ </output>
+	<output> <name></name> <id>7</id> <idx>1</idx>
+ </output>
+	<output> <name></name> <id>8</id> <idx>2</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Dynamic animation</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync System</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Send Event On End</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>State Variable</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Mirror</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Is Action Animation</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Only Transition Out</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Enter Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>2</type> <value>StartVoice</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Exit Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>2</type> <value>AnimObjUnequipAll</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>2</type> <value>AnimationComplete</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+	</property_sheet>
+</node>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Start Selection Method</value> </prop>
+			<prop> <type>2</type> <value>Default</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Start Selection Variable</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Maintain Sync Selection Variable When Exiting</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Update While Inactive</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>3</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>State Name</header> <types>2</types> </column>
+		<column> <header>Node ID</header> <types>0</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>None</value> </prop>
+			<prop> <type>0</type> <value>1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Dynamic animation</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Enter Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Exit Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>3</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Swap Graph Events</header> <types>2</types> </column>
+		<column> <header>Blend Time</header> <types>1</types> </column>
+	</property_sheet>
+</graph>
+</node>
+<node>
+	<node_type>NT_GRAPH_REF</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Graph Reference</name>
+	<pos_x>2889</pos_x>
+	<pos_y>735</pos_y>
+	<expanded_pos_x>2889</expanded_pos_x>
+	<expanded_pos_y>0</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>06ee6d50-bc63-4697-935f-de56274afe9f</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Graph Ref</value> </prop>
+			<prop> <type>2</type> <value>Ladder</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Wrapped Graph</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_GRAPH_REF</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Graph Reference</name>
+	<pos_x>1545</pos_x>
+	<pos_y>751</pos_y>
+	<expanded_pos_x>1545</expanded_pos_x>
+	<expanded_pos_y>727</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>a6b1849d-fddb-4158-977e-ac7d4ba12ce6</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Graph Ref</value> </prop>
+			<prop> <type>2</type> <value>LookAt_Chest</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Wrapped Graph</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_GRAPH_REF</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Graph Reference</name>
+	<pos_x>1545</pos_x>
+	<pos_y>807</pos_y>
+	<expanded_pos_x>1577</expanded_pos_x>
+	<expanded_pos_y>807</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>82f20136-3746-408d-9f97-adb428d70ce0</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Graph Ref</value> </prop>
+			<prop> <type>2</type> <value>LookAt_Head</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Wrapped Graph</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_MERGE_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Merge</name>
+	<pos_x>1847</pos_x>
+	<pos_y>743</pos_y>
+	<expanded_pos_x>1847</expanded_pos_x>
+	<expanded_pos_y>743</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>e223b9c4-2d00-4ee9-9717-1c4ee8a30204</guid>
+	<input> <name>Input1</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>16</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Input2</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>17</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Merge Sneak Events</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_ASSIGN_VARIABLE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Assign Variable</name>
+	<pos_x>1735</pos_x>
+	<pos_y>639</pos_y>
+	<expanded_pos_x>1735</expanded_pos_x>
+	<expanded_pos_y>639</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>55c2c142-aef4-4b79-b5e3-7e7cabdb47b2</guid>
+	<input> <name>passthrough</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>4</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>2</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>iState Sneak</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Operation</value> </prop>
+			<prop> <type>2</type> <value>Assign</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Only Assign Once</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>3</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Variable Name</header> <types>5</types> </column>
+		<column> <header>Assigned Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>0</type> <value>iState</value> </prop>
+			<prop> <type>0</type> <value>1</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_STATE_MACHINE_EMBEDDED</node_type>
+	<noninstanced>False</noninstanced>
+	<name>State Machine Embedded</name>
+	<pos_x>1809</pos_x>
+	<pos_y>767</pos_y>
+	<expanded_pos_x>1816</expanded_pos_x>
+	<expanded_pos_y>725</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>e7945d77-3c17-4b6f-8de1-70a4f7804acd</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>State Machine Name</value> </prop>
+			<prop> <type>2</type> <value>Sneak Events</value> </prop>
+		</row>
+	</property_sheet>
+<graph>
+<Link_Style>1</Link_Style>
+<node>
+<default_state>True</default_state>
+	<node_type>NT_ANIMATION_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Animation</name>
+	<pos_x>59</pos_x>
+	<pos_y>82.5</pos_y>
+	<expanded_pos_x>59</expanded_pos_x>
+	<expanded_pos_y>82.5</expanded_pos_y>
+	<use_color_2>True</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>4be42fbc-b4c1-448c-a6b6-ffb9ac2048d2</guid>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>TagName</value> </prop>
+			<prop> <type>2</type> <value>None</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync System</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Slave</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Send Event On End</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>State Variable</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>State Variable Ref Count</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Update Ref Count When Inactive</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Speed Multiplier</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Speed Multiplier Is Duration</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Crop Start Frames</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Crop End Frames</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Randomize Start Point</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Mirror</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Process Inactive Events</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Control</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Only Transition Out</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Enter Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>2</type> <value>SneakState</value> </prop>
+			<prop> <type>2</type> <value>Enter</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Exit Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>2</type> <value>SneakState</value> </prop>
+			<prop> <type>2</type> <value>Exit</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Start Selection Method</value> </prop>
+			<prop> <type>2</type> <value>Default</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Start Selection Variable</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Maintain Sync Selection Variable When Exiting</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Update While Inactive</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>3</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>State Name</header> <types>2</types> </column>
+		<column> <header>Node ID</header> <types>0</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>None</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Enter Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Exit Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>3</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Swap Graph Events</header> <types>2</types> </column>
+		<column> <header>Blend Time</header> <types>1</types> </column>
+	</property_sheet>
+</graph>
+</node>
+<node>
+	<node_type>NT_GRAPH_REF</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Blend Tree Embedded</name>
+	<pos_x>3073</pos_x>
+	<pos_y>759</pos_y>
+	<expanded_pos_x>3113</expanded_pos_x>
+	<expanded_pos_y>759</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>9c009fd3-adad-41b9-ad2c-df18d30c65dd</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<output> <name>Out</name> <id>2</id> <idx>1</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Graph Ref</value> </prop>
+			<prop> <type>2</type> <value>Mantling</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Wrapped Graph</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_GRAPH_REF</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Graph Reference</name>
+	<pos_x>3721</pos_x>
+	<pos_y>687</pos_y>
+	<expanded_pos_x>3721</expanded_pos_x>
+	<expanded_pos_y>687</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>d80e0d1f-3338-4a96-a761-d3a491c3b292</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Graph Ref</value> </prop>
+			<prop> <type>2</type> <value>Cameras</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Wrapped Graph</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_GRAPH_REF</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Graph Reference</name>
+	<pos_x>2689</pos_x>
+	<pos_y>751</pos_y>
+	<expanded_pos_x>2705</expanded_pos_x>
+	<expanded_pos_y>751</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>447d576d-9195-491f-906e-03b63980e09d</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Graph Ref</value> </prop>
+			<prop> <type>2</type> <value>Stagger</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Wrapped Graph</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_SWITCH_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Switch</name>
+	<pos_x>2167</pos_x>
+	<pos_y>567</pos_y>
+	<expanded_pos_x>2167</expanded_pos_x>
+	<expanded_pos_y>567</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>961e02b4-f43e-4baa-bc0c-604b0936967d</guid>
+	<input> <name>Gravity</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>22</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>ZeroGravity</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>24</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Gravity</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Name</value> </prop>
+			<prop> <type>0</type> <value>iSyncGravity</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Type</value> </prop>
+			<prop> <type>2</type> <value>Event and Variable</value> <listindex>2</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Max Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.5</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Randomize If Invalid</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Tag Alteration</value> </prop>
+			<prop> <type>2</type> <value>Prefix</value> <listindex>1</listindex> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>6</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Def.</header> <types>3</types> </column>
+		<column> <header>SM Evt</header> <types>3</types> </column>
+		<column> <header>Param</header> <types>0</types> </column>
+		<column> <header>Tag</header> <types>2</types> </column>
+		<column> <header>Event List</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Gravity</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>GravityOn</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>ZeroGravity</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>0</type> <value>1</value> </prop>
+			<prop> <type>2</type> <value>ZeroG</value> </prop>
+			<prop> <type>2</type> <value>GravityOff</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_SWITCH_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Switch</name>
+	<pos_x>1911</pos_x>
+	<pos_y>495</pos_y>
+	<expanded_pos_x>1911</expanded_pos_x>
+	<expanded_pos_y>495</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>83b8562b-d348-43d9-afc0-e3f9e08c5494</guid>
+	<input> <name>Relaxed</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>4</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Ready</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>4</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Sneak</name> <id>4</id> <idx>2</idx>
+
+		<link>
+			<node>15</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>RelaxReadySneakSwitch</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Name</value> </prop>
+			<prop> <type>0</type> <value>iSyncRelaxReadySneak</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Type</value> </prop>
+			<prop> <type>2</type> <value>Event and Variable</value> <listindex>2</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Max Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.3</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Randomize If Invalid</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Tag Alteration</value> </prop>
+			<prop> <type>2</type> <value>Prefix</value> <listindex>1</listindex> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>6</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Def.</header> <types>3</types> </column>
+		<column> <header>SM Evt</header> <types>3</types> </column>
+		<column> <header>Param</header> <types>0</types> </column>
+		<column> <header>Tag</header> <types>2</types> </column>
+		<column> <header>Event List</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Relaxed</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+			<prop> <type>2</type> <value>Relaxed</value> </prop>
+			<prop> <type>2</type> <value>RelaxedStart</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Ready</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>0</type> <value>1</value> </prop>
+			<prop> <type>2</type> <value>Ready</value> </prop>
+			<prop> <type>2</type> <value>ReadyStart</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sneak</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>0</type> <value>2</value> </prop>
+			<prop> <type>2</type> <value>Sneak</value> </prop>
+			<prop> <type>2</type> <value>SneakStart</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_COPY_BONE_WEIGHTS</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Copy Bone Weights</name>
+	<pos_x>599</pos_x>
+	<pos_y>623</pos_y>
+	<expanded_pos_x>599</expanded_pos_x>
+	<expanded_pos_y>623</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>ec4a21ec-3e61-4b01-8db2-1ad29517d005</guid>
+	<input> <name>base animations</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>28</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>layered animations</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>8</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Standing</name> <id>3</id> <idx>2</idx>
+ </input>
+	<input> <name>Walking, Turning</name> <id>5</id> <idx>3</idx>
+
+		<link>
+			<node>27</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Jumping</name> <id>6</id> <idx>4</idx>
+
+		<link>
+			<node>27</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>4</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Copy Bone Weights</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Control Variable</value> </prop>
+			<prop> <type>0</type> <value>BoneWeightsAction</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Blend Rate</value> </prop>
+			<prop> <type>1</type> <value>0.3</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Activate Base Event List</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_ASSIGN_VARIABLE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Assign Variable</name>
+	<pos_x>2023</pos_x>
+	<pos_y>623</pos_y>
+	<expanded_pos_x>2023</expanded_pos_x>
+	<expanded_pos_y>623</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>c11240f4-e908-48cb-9d48-600886fe6cf1</guid>
+	<input> <name>passthrough</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>4</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>2</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>iState ZeroG</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Operation</value> </prop>
+			<prop> <type>2</type> <value>Assign</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Only Assign Once</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>3</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Variable Name</header> <types>5</types> </column>
+		<column> <header>Assigned Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>0</type> <value>iState</value> </prop>
+			<prop> <type>0</type> <value>7</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_BONE_CONSTRAINT</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Bone Constraint</name>
+	<pos_x>3207</pos_x>
+	<pos_y>591</pos_y>
+	<expanded_pos_x>3207</expanded_pos_x>
+	<expanded_pos_y>591</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>af066e3e-cb38-45bd-ba2e-861bbb634cb2</guid>
+	<input> <name>passthrough</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>3</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>2</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Bone Constraint</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Source Bone</value> </prop>
+			<prop> <type>2</type> <value>WeaponLeft</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Target Bone</value> </prop>
+			<prop> <type>2</type> <value>R_AnimObject1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Activate Variable</value> </prop>
+			<prop> <type>0</type> <value>bWeaponLeftToRAnimObject</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_BONE_CONSTRAINT</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Bone Constraint</name>
+	<pos_x>3335</pos_x>
+	<pos_y>591</pos_y>
+	<expanded_pos_x>3335</expanded_pos_x>
+	<expanded_pos_y>591</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>012da10c-3a83-4243-af25-45c3fe58ad7d</guid>
+	<input> <name>passthrough</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>25</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>2</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Bone Constraint</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Source Bone</value> </prop>
+			<prop> <type>2</type> <value>WeaponLeft</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Target Bone</value> </prop>
+			<prop> <type>2</type> <value>L_AnimObject1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Activate Variable</value> </prop>
+			<prop> <type>0</type> <value>bWeaponLeftToLAnimObject</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_GRAPH_REF</node_type>
+	<noninstanced>False</noninstanced>
+	<name>State Machine Embedded</name>
+	<pos_x>673</pos_x>
+	<pos_y>799</pos_y>
+	<expanded_pos_x>961</expanded_pos_x>
+	<expanded_pos_y>751</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>b6227bff-ec8d-45d7-814a-fdee8b5b4150</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<output> <name>Out</name> <id>2</id> <idx>1</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Graph Ref</value> </prop>
+			<prop> <type>2</type> <value>BoneWeights</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Wrapped Graph</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_MERGE_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Merge</name>
+	<pos_x>447</pos_x>
+	<pos_y>575</pos_y>
+	<expanded_pos_x>447</expanded_pos_x>
+	<expanded_pos_y>575</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>7d80f7cb-1a4e-4448-a4de-1316986fd877</guid>
+	<input> <name>Input1</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>29</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Input2</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>40</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Merge Node</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_GRAPH_REF</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Graph Reference</name>
+	<pos_x>409</pos_x>
+	<pos_y>551</pos_y>
+	<expanded_pos_x>409</expanded_pos_x>
+	<expanded_pos_y>551</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>False</collapsed>
+	<guid>2265dd70-160a-48fe-b407-30f84acbb6b1</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Graph Ref</value> </prop>
+			<prop> <type>2</type> <value>SprintEvents</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Wrapped Graph</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_STATE_MACHINE_EMBEDDED</node_type>
+	<noninstanced>False</noninstanced>
+	<flags><flag>Animation Driven</flag><flag>Equip Not OK</flag><flag>Is Attack Not Ready</flag></flags>
+	<name>State Machine Embedded</name>
+	<pos_x>2513</pos_x>
+	<pos_y>751</pos_y>
+	<expanded_pos_x>2513</expanded_pos_x>
+	<expanded_pos_y>707</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>7ecf4797-4fd8-4216-bce7-e88e81f7bb9d</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>State Machine Name</value> </prop>
+			<prop> <type>2</type> <value>Stun</value> </prop>
+		</row>
+	</property_sheet>
+<graph>
+<Link_Style>1</Link_Style>
+<node>
+	<node_type>NT_ANIMATION_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Animation</name>
+	<pos_x>-265</pos_x>
+	<pos_y>207</pos_y>
+	<expanded_pos_x>-265</expanded_pos_x>
+	<expanded_pos_y>207</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>2</user_id>
+	<collapsed>True</collapsed>
+	<guid>b9a3709a-e98f-4b19-a6e3-904d331f57ba</guid>
+	<input> <name></name> <id>5</id> <idx>0</idx>
+
+		<link>
+			<node>3</node> <output>1</output> <hidden>False</hidden>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Event</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Comment</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Condition</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.3</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Priority</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Allow Self Transition</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Do Not Follow Sync Group</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Transition Type</value> </prop>
+			<prop> <type>2</type> <value>Smooth</value> <listindex>0</listindex> </prop>
+		</row>
+	</property_sheet>
+		</link>
+ </input>
+	<output> <name></name> <id>2</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>TagName</value> </prop>
+			<prop> <type>2</type> <value>Idle</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync System</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Slave</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Send Event On End</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>State Variable</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>State Variable Ref Count</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Update Ref Count When Inactive</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Speed Multiplier</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Speed Multiplier Is Duration</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Crop Start Frames</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Crop End Frames</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Randomize Start Point</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Mirror</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Process Inactive Events</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Control</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Only Transition Out</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Enter Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Exit Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_ANIMATION_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Animation</name>
+	<pos_x>-65</pos_x>
+	<pos_y>207</pos_y>
+	<expanded_pos_x>-65</expanded_pos_x>
+	<expanded_pos_y>207</expanded_pos_y>
+	<use_color_2>True</use_color_2>
+	<user_id>1</user_id>
+	<collapsed>True</collapsed>
+	<guid>3c9cf48a-ae9d-41d2-b42c-94534c0cdfba</guid>
+	<input> <name></name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>1</node> <output>0</output> <hidden>False</hidden>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Event</value> </prop>
+			<prop> <type>2</type> <value>StunStop</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Comment</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Condition</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.3</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Priority</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Allow Self Transition</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Do Not Follow Sync Group</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Transition Type</value> </prop>
+			<prop> <type>2</type> <value>Smooth</value> <listindex>0</listindex> </prop>
+		</row>
+	</property_sheet>
+		</link>
+ </input>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>TagName</value> </prop>
+			<prop> <type>2</type> <value>Out</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync System</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Slave</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Send Event On End</value> </prop>
+			<prop> <type>2</type> <value>StunEnd</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>State Variable</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>State Variable Ref Count</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Update Ref Count When Inactive</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Speed Multiplier</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Speed Multiplier Is Duration</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Crop Start Frames</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Crop End Frames</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Randomize Start Point</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Mirror</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Process Inactive Events</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Control</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Only Transition Out</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Enter Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Exit Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+</node>
+<node>
+<default_state>True</default_state>
+	<node_type>NT_ANIMATION_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Animation</name>
+	<pos_x>-265</pos_x>
+	<pos_y>127</pos_y>
+	<expanded_pos_x>-265</expanded_pos_x>
+	<expanded_pos_y>127</expanded_pos_y>
+	<use_color_2>True</use_color_2>
+	<user_id>4</user_id>
+	<collapsed>True</collapsed>
+	<guid>3e7e01c3-85e3-44a8-bb3a-3fe3ceb689de</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<output> <name></name> <id>2</id> <idx>1</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>TagName</value> </prop>
+			<prop> <type>2</type> <value>Into</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync System</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Slave</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Send Event On End</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>State Variable</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>State Variable Ref Count</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Update Ref Count When Inactive</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Speed Multiplier</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Speed Multiplier Is Duration</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Crop Start Frames</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Crop End Frames</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Randomize Start Point</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Mirror</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Process Inactive Events</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Control</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Only Transition Out</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Enter Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Exit Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+</node>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Start Selection Method</value> </prop>
+			<prop> <type>2</type> <value>Default</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Start Selection Variable</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Maintain Sync Selection Variable When Exiting</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Update While Inactive</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>3</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>State Name</header> <types>2</types> </column>
+		<column> <header>Node ID</header> <types>0</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Idle</value> </prop>
+			<prop> <type>0</type> <value>2</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Out</value> </prop>
+			<prop> <type>0</type> <value>1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Into</value> </prop>
+			<prop> <type>0</type> <value>4</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Enter Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Exit Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>3</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Swap Graph Events</header> <types>2</types> </column>
+		<column> <header>Blend Time</header> <types>1</types> </column>
+	</property_sheet>
+</graph>
+</node>
+<node>
+	<node_type>NT_SWITCH_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Switch</name>
+	<pos_x>2551</pos_x>
+	<pos_y>607</pos_y>
+	<expanded_pos_x>2551</expanded_pos_x>
+	<expanded_pos_y>607</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>0cb85697-3f31-49e4-a6d6-c5c47927f4a4</guid>
+	<input> <name>Idle</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>33</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Stun</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>30</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Switch</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Name</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Type</value> </prop>
+			<prop> <type>2</type> <value>Event</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Max Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.3</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Randomize If Invalid</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Tag Alteration</value> </prop>
+			<prop> <type>2</type> <value>Prefix</value> <listindex>1</listindex> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>6</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Def.</header> <types>3</types> </column>
+		<column> <header>SM Evt</header> <types>3</types> </column>
+		<column> <header>Param</header> <types>0</types> </column>
+		<column> <header>Tag</header> <types>2</types> </column>
+		<column> <header>Event List</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Idle</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>StunEnd</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Stun</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>0</type> <value>1</value> </prop>
+			<prop> <type>2</type> <value>Stun</value> </prop>
+			<prop> <type>2</type> <value>StunStart</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_STAGGER_METER</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Stagger Meter</name>
+	<pos_x>2711</pos_x>
+	<pos_y>599</pos_y>
+	<expanded_pos_x>2711</expanded_pos_x>
+	<expanded_pos_y>599</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>390f877d-6ab4-41a0-9259-e3ebb6d5dfdf</guid>
+	<input> <name>base animations</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>31</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>stagger animations</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>20</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Stagger Meter</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Listen Event</value> </prop>
+			<prop> <type>2</type> <value>StaggerStart</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Stagger Force Variable</value> </prop>
+			<prop> <type>1</type> <value>1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Stagger Cooldown</value> </prop>
+			<prop> <type>1</type> <value>0.5</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Immunity Threshold</value> </prop>
+			<prop> <type>1</type> <value>1.0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Immunity Delay Before Decay</value> </prop>
+			<prop> <type>1</type> <value>0.5</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Immunity Decay Rate</value> </prop>
+			<prop> <type>1</type> <value>1.0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Immunity Consume Rate</value> </prop>
+			<prop> <type>1</type> <value>2.0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Counter Attack Event</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Counter Attack Threshold</value> </prop>
+			<prop> <type>1</type> <value>-1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Counter Attack Chance</value> </prop>
+			<prop> <type>1</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Counter Attack Cooldown</value> </prop>
+			<prop> <type>1</type> <value>0</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>3</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Event</header> <types>2</types> </column>
+		<column> <header>Threshold</header> <types>1</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>StaggerStart</value> </prop>
+			<prop> <type>1</type> <value>1</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_SWITCH_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Switch</name>
+	<pos_x>2327</pos_x>
+	<pos_y>575</pos_y>
+	<expanded_pos_x>2327</expanded_pos_x>
+	<expanded_pos_y>575</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>e4b12355-ed88-41fd-94c0-99981725c651</guid>
+	<input> <name>Idle</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>21</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Swimming</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>34</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Swimming</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Name</value> </prop>
+			<prop> <type>0</type> <value>iSyncSwimState</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Type</value> </prop>
+			<prop> <type>2</type> <value>Event and Variable</value> <listindex>2</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Max Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.3</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Randomize If Invalid</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Tag Alteration</value> </prop>
+			<prop> <type>2</type> <value>Prefix</value> <listindex>1</listindex> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>6</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Def.</header> <types>3</types> </column>
+		<column> <header>SM Evt</header> <types>3</types> </column>
+		<column> <header>Param</header> <types>0</types> </column>
+		<column> <header>Tag</header> <types>2</types> </column>
+		<column> <header>Event List</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Idle</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>SwimStop</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Swimming</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>0</type> <value>1</value> </prop>
+			<prop> <type>2</type> <value>Swim</value> </prop>
+			<prop> <type>2</type> <value>SwimStart_Melee,SwimStart</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_ASSIGN_VARIABLE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Assign Variable</name>
+	<pos_x>2151</pos_x>
+	<pos_y>727</pos_y>
+	<expanded_pos_x>2151</expanded_pos_x>
+	<expanded_pos_y>727</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>d16ee81b-1722-456e-be06-77d73f4c05a2</guid>
+	<input> <name>passthrough</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>4</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>2</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>iState Swimming</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Operation</value> </prop>
+			<prop> <type>2</type> <value>Assign</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Only Assign Once</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>3</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Variable Name</header> <types>5</types> </column>
+		<column> <header>Assigned Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>0</type> <value>iState</value> </prop>
+			<prop> <type>0</type> <value>8</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_POST_BONE_MODIFIER_CONTROL</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Post Bone Modifier Control</name>
+	<pos_x>3919</pos_x>
+	<pos_y>559</pos_y>
+	<expanded_pos_x>3919</expanded_pos_x>
+	<expanded_pos_y>559</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>5587f548-a8a8-4f7c-aa08-794ed2e0a301</guid>
+	<input> <name>Pose Input</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>1</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Pose Output</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>36</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Bone Modifier Control</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_STATE_MACHINE_EMBEDDED</node_type>
+	<noninstanced>False</noninstanced>
+	<name>State Machine Embedded</name>
+	<pos_x>3913</pos_x>
+	<pos_y>687</pos_y>
+	<expanded_pos_x>3913</expanded_pos_x>
+	<expanded_pos_y>687</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>7fb350f3-3fc0-4156-aeba-39ff83545029</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>State Machine Name</value> </prop>
+			<prop> <type>2</type> <value>Sprint FOV</value> </prop>
+		</row>
+	</property_sheet>
+<graph>
+<Link_Style>1</Link_Style>
+<node>
+<default_state>True</default_state>
+	<node_type>NT_ANIMATION_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Animation</name>
+	<pos_x>58.38428</pos_x>
+	<pos_y>66.46155</pos_y>
+	<expanded_pos_x>58.38428</expanded_pos_x>
+	<expanded_pos_y>66.46155</expanded_pos_y>
+	<use_color_2>True</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>43ae6a80-7fc4-4078-a283-4a06c5b566f0</guid>
+	<input> <name></name> <id>2</id> <idx>0</idx>
+
+		<link>
+			<node>2</node> <output>0</output> <hidden>False</hidden>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Event</value> </prop>
+			<prop> <type>2</type> <value>SprintStop</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Comment</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Condition</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.3</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Priority</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Allow Self Transition</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Do Not Follow Sync Group</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Transition Type</value> </prop>
+			<prop> <type>2</type> <value>Smooth</value> <listindex>0</listindex> </prop>
+		</row>
+	</property_sheet>
+		</link>
+ </input>
+	<output> <name></name> <id>1</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>TagName</value> </prop>
+			<prop> <type>2</type> <value>None</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync System</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Slave</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Send Event On End</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>State Variable</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>State Variable Ref Count</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Update Ref Count When Inactive</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Speed Multiplier</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Speed Multiplier Is Duration</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Crop Start Frames</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Crop End Frames</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Randomize Start Point</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Mirror</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Process Inactive Events</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Control</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Only Transition Out</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Enter Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Exit Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_TRANSLATION_ADJUSTMENT</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Translation Adjustment</name>
+	<pos_x>47</pos_x>
+	<pos_y>151</pos_y>
+	<expanded_pos_x>47</expanded_pos_x>
+	<expanded_pos_y>151</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>1</user_id>
+	<collapsed>True</collapsed>
+	<guid>0bf6a1c2-ea4a-4b56-8714-1536bfed7b90</guid>
+	<input> <name></name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>1</node> <output>0</output> <hidden>False</hidden>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Event</value> </prop>
+			<prop> <type>2</type> <value>SprintStart</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Comment</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Condition</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.3</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Priority</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Allow Self Transition</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Do Not Follow Sync Group</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Transition Type</value> </prop>
+			<prop> <type>2</type> <value>Smooth</value> <listindex>0</listindex> </prop>
+		</row>
+	</property_sheet>
+		</link>
+ </input>
+	<output> <name></name> <id>2</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Trans Adjustment</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Bone Name</value> </prop>
+			<prop> <type>2</type> <value>Camera Control</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Value</value> </prop>
+			<prop> <type>4</type> <value>0;0;0.1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Only Transition Out</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Enter Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Exit Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+</node>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Start Selection Method</value> </prop>
+			<prop> <type>2</type> <value>Default</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Start Selection Variable</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Maintain Sync Selection Variable When Exiting</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Update While Inactive</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>3</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>State Name</header> <types>2</types> </column>
+		<column> <header>Node ID</header> <types>0</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>None</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Trans Adjustment</value> </prop>
+			<prop> <type>0</type> <value>1</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Enter Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>4</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Non Instanced</header> <types>3</types> </column>
+		<column> <header>Exit Events</header> <types>2</types> </column>
+		<column> <header>Payload</header> <types>2</types> </column>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>3</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Swap Graph Events</header> <types>2</types> </column>
+		<column> <header>Blend Time</header> <types>1</types> </column>
+	</property_sheet>
+</graph>
+</node>
+<node>
+	<node_type>NT_MERGE_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Merge</name>
+	<pos_x>4103</pos_x>
+	<pos_y>527</pos_y>
+	<expanded_pos_x>4103</expanded_pos_x>
+	<expanded_pos_y>527</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>4b4b7afb-a863-4c1e-a2dc-7c220f7e061e</guid>
+	<input> <name>Input1</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>38</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Input2</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>35</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Merge Node</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_ASSIGN_VARIABLE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Assign Variable</name>
+	<pos_x>3911</pos_x>
+	<pos_y>439</pos_y>
+	<expanded_pos_x>3911</expanded_pos_x>
+	<expanded_pos_y>439</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>0c714b34-b8d9-40c4-9ece-c56a97d24d03</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Assign Variable</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Operation</value> </prop>
+			<prop> <type>2</type> <value>Assign</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Only Assign Once</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>3</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Variable Name</header> <types>5</types> </column>
+		<column> <header>Assigned Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>0</type> <value>iSyncSighted</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>0</type> <value>iIsSighted</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>0</type> <value>iSightedRequested</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>0</type> <value>bWeaponToRAnimObject</value> </prop>
+			<prop> <type>0</type> <value>1</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_BLEND_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<divisions>0</divisions>
+	<blendInput>
+	</blendInput>
+	<blendInput>
+	</blendInput>
+	<name>Blend</name>
+	<pos_x>815</pos_x>
+	<pos_y>759</pos_y>
+	<expanded_pos_x>815</expanded_pos_x>
+	<expanded_pos_y>759</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>39816914-d40b-4a07-8f0a-a46e73bee3f9</guid>
+	<input> <name>Idle</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>23</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Attacking</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>9</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Blend Node</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Name</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Type</value> </prop>
+			<prop> <type>2</type> <value>Layer</value> <listindex>2</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Variable</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Input Lock Time</value> </prop>
+			<prop> <type>1</type> <value>-1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Range Min</value> </prop>
+			<prop> <type>1</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Range Max</value> </prop>
+			<prop> <type>1</type> <value>1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Wrap To Range</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Max Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Normalize Weights</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Only Highest Weight Active</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>5</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Param</header> <types>1</types> </column>
+		<column> <header>SM Evt</header> <types>3</types> </column>
+		<column> <header>Enable Events</header> <types>2</types> </column>
+		<column> <header>Disable Events</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Idle</value> </prop>
+			<prop> <type>1</type> <value>1</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Attacking</value> </prop>
+			<prop> <type>1</type> <value>0</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+			<prop> <type>2</type> <value>MeleeAttackPowerStart,MeleeAttackSprintStart</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_BLEND_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<divisions>0</divisions>
+	<blendInput>
+	</blendInput>
+	<blendInput>
+	</blendInput>
+	<name>Blend</name>
+	<pos_x>311</pos_x>
+	<pos_y>623</pos_y>
+	<expanded_pos_x>311</expanded_pos_x>
+	<expanded_pos_y>623</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>a56be2b9-af5e-4c9a-a009-f67ff42af707</guid>
+	<input> <name>OnGround</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>48</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Jumping</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>41</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Jumping</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Name</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Type</value> </prop>
+			<prop> <type>2</type> <value>Standard</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Variable</value> </prop>
+			<prop> <type>0</type> <value>SyncJumpBlend</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Input Lock Time</value> </prop>
+			<prop> <type>1</type> <value>-1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Range Min</value> </prop>
+			<prop> <type>1</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Range Max</value> </prop>
+			<prop> <type>1</type> <value>1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Wrap To Range</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Max Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Normalize Weights</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Only Highest Weight Active</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>5</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Param</header> <types>1</types> </column>
+		<column> <header>SM Evt</header> <types>3</types> </column>
+		<column> <header>Enable Events</header> <types>2</types> </column>
+		<column> <header>Disable Events</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value>OnGround</value> </prop>
+			<prop> <type>1</type> <value>1</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>2</type> <value>JumpLandStop,JumpLandAdditive</value> </prop>
+			<prop> <type>2</type> <value>JumpStart,JumpFall,GravDashStart_Short,GravDashStart_Medium,GravDashStart_Long,JumpUp</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Jumping</value> </prop>
+			<prop> <type>1</type> <value>0</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>2</type> <value>JumpStart,JumpFall,GravDashStart_Short,GravDashStart_Medium,GravDashStart_Long</value> </prop>
+			<prop> <type>2</type> <value>JumpLandStop</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_GRAPH_REF</node_type>
+	<noninstanced>False</noninstanced>
+	<name>State Machine Embedded</name>
+	<pos_x>281</pos_x>
+	<pos_y>695</pos_y>
+	<expanded_pos_x>281</expanded_pos_x>
+	<expanded_pos_y>695</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>16ae68cd-1dff-4c35-a44c-f015fbf68935</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<output> <name>Out</name> <id>2</id> <idx>1</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Graph Ref</value> </prop>
+			<prop> <type>2</type> <value>Jumping</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Wrapped Graph</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_BLEND_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<divisions>0</divisions>
+	<blendInput>
+	</blendInput>
+	<blendInput>
+	</blendInput>
+	<name>Blend</name>
+	<pos_x>1087</pos_x>
+	<pos_y>607</pos_y>
+	<expanded_pos_x>1087</expanded_pos_x>
+	<expanded_pos_y>607</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>b57c11b1-605e-48e0-b38f-0ec1f2cadcc3</guid>
+	<input> <name>Idle</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>44</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>GravDash</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>43</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Blend Node</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Name</value> </prop>
+			<prop> <type>1</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Type</value> </prop>
+			<prop> <type>2</type> <value>Layer</value> <listindex>2</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Sync Variable</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Input Lock Time</value> </prop>
+			<prop> <type>1</type> <value>-1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Range Min</value> </prop>
+			<prop> <type>1</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Range Max</value> </prop>
+			<prop> <type>1</type> <value>1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Wrap To Range</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Max Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Normalize Weights</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Only Highest Weight Active</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>5</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Param</header> <types>1</types> </column>
+		<column> <header>SM Evt</header> <types>3</types> </column>
+		<column> <header>Enable Events</header> <types>2</types> </column>
+		<column> <header>Disable Events</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Idle</value> </prop>
+			<prop> <type>1</type> <value>1</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>2</type> <value>CastEnd</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>GravDash</value> </prop>
+			<prop> <type>1</type> <value>0</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>CastEnd</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_GRAPH_REF</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Graph Reference</name>
+	<pos_x>1071.5</pos_x>
+	<pos_y>783.6667</pos_y>
+	<expanded_pos_x>1073</expanded_pos_x>
+	<expanded_pos_y>783</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>False</collapsed>
+	<guid>e56bf468-a17f-4108-86ba-53da7ea100f3</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Graph Ref</value> </prop>
+			<prop> <type>2</type> <value>GravDash</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Wrapped Graph</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_SWITCH_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Switch</name>
+	<pos_x>951</pos_x>
+	<pos_y>631</pos_y>
+	<expanded_pos_x>951</expanded_pos_x>
+	<expanded_pos_y>631</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>23bb8a20-13d6-4870-8069-ca44681d0a87</guid>
+	<input> <name>Gravity</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>45</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>ZeroGravity</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>39</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Gravity</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Name</value> </prop>
+			<prop> <type>0</type> <value>iSyncGravity</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Type</value> </prop>
+			<prop> <type>2</type> <value>Variable</value> <listindex>1</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Max Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Randomize If Invalid</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Tag Alteration</value> </prop>
+			<prop> <type>2</type> <value>Do Nothing</value> <listindex>0</listindex> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>6</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Def.</header> <types>3</types> </column>
+		<column> <header>SM Evt</header> <types>3</types> </column>
+		<column> <header>Param</header> <types>0</types> </column>
+		<column> <header>Tag</header> <types>2</types> </column>
+		<column> <header>Event List</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Gravity</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>ZeroGravity</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>0</type> <value>1</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_SWITCH_NODE</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Switch</name>
+	<pos_x>815</pos_x>
+	<pos_y>639</pos_y>
+	<expanded_pos_x>815</expanded_pos_x>
+	<expanded_pos_y>639</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>a0e70430-bb3a-4ca9-b6b1-787a3f56e9f1</guid>
+	<input> <name>Idle</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>23</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<input> <name>Attacking</name> <id>2</id> <idx>1</idx>
+
+		<link>
+			<node>9</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>3</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Switch</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Name</value> </prop>
+			<prop> <type>0</type> <value></value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Variable Type</value> </prop>
+			<prop> <type>2</type> <value>Event</value> <listindex>0</listindex> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Max Blend Time</value> </prop>
+			<prop> <type>1</type> <value>0.1</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Randomize If Invalid</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Tag Alteration</value> </prop>
+			<prop> <type>2</type> <value>Do Nothing</value> <listindex>0</listindex> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>6</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Def.</header> <types>3</types> </column>
+		<column> <header>SM Evt</header> <types>3</types> </column>
+		<column> <header>Param</header> <types>0</types> </column>
+		<column> <header>Tag</header> <types>2</types> </column>
+		<column> <header>Event List</header> <types>2</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Idle</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>0</type> <value>0</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>AttackEnd,ActionInterrupt,BlockStart,JumpStart</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Attacking</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+			<prop> <type>3</type> <value>True</value> </prop>
+			<prop> <type>0</type> <value>1</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>MeleeAttackPowerStart,MeleeAttackSprintStart</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_GRAPH_REF</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Graph Reference</name>
+	<pos_x>3717</pos_x>
+	<pos_y>480</pos_y>
+	<expanded_pos_x>3721</expanded_pos_x>
+	<expanded_pos_y>479</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>False</collapsed>
+	<guid>0e12cd38-4ae8-4c16-bd8e-25483fc12d60</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Graph Ref</value> </prop>
+			<prop> <type>2</type> <value>MeleeEventControllers</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Wrapped Graph</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_BONE_CONSTRAINT</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Bone Constraint</name>
+	<pos_x>3463</pos_x>
+	<pos_y>591</pos_y>
+	<expanded_pos_x>3463</expanded_pos_x>
+	<expanded_pos_y>591</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>True</collapsed>
+	<guid>b2e1f8e3-282c-43c8-96ab-3ddbee18752a</guid>
+	<input> <name>passthrough</name> <id>1</id> <idx>0</idx>
+
+		<link>
+			<node>26</node> <output>0</output> <hidden>False</hidden>
+		</link>
+ </input>
+	<output> <name>Out</name> <id>2</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Name</value> </prop>
+			<prop> <type>2</type> <value>Bone Constraint</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Source Bone</value> </prop>
+			<prop> <type>2</type> <value>Weapon</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Target Bone</value> </prop>
+			<prop> <type>2</type> <value>R_AnimObject3</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Activate Variable</value> </prop>
+			<prop> <type>0</type> <value>bWeaponToRAnimObject</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+<node>
+	<node_type>NT_GRAPH_REF</node_type>
+	<noninstanced>False</noninstanced>
+	<name>Graph Reference</name>
+	<pos_x>285.8333</pos_x>
+	<pos_y>633.3889</pos_y>
+	<expanded_pos_x>289</expanded_pos_x>
+	<expanded_pos_y>631</expanded_pos_y>
+	<use_color_2>False</use_color_2>
+	<user_id>0</user_id>
+	<collapsed>False</collapsed>
+	<guid>5094034b-84ab-401c-abee-0c91ed5ce1b6</guid>
+	<output> <name>Out</name> <id>1</id> <idx>0</idx>
+ </output>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Graph Ref</value> </prop>
+			<prop> <type>2</type> <value>Biped_IdleLocomotion</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value>Wrapped Graph</value> </prop>
+			<prop> <type>3</type> <value>False</value> </prop>
+		</row>
+	</property_sheet>
+</node>
+	<property_sheet>
+		<num_columns>2</num_columns>
+		<column> <header>Property</header> <types>5</types> </column>
+		<column> <header>Value</header> <types>5</types> </column>
+		<row>
+			<prop> <type>2</type> <value>Blend Tree Name</value> </prop>
+			<prop> <type>2</type> <value></value> </prop>
+		</row>
+	</property_sheet>
+	<property_sheet>
+		<num_columns>3</num_columns>
+		<column> <header></header> <types>2</types> </column>
+		<column> <header>Swap Graph Events</header> <types>2</types> </column>
+		<column> <header>Blend Time</header> <types>1</types> </column>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>InitializeMeleeGraph</value> </prop>
+			<prop> <type>1</type> <value>0.3</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>Equip</value> </prop>
+			<prop> <type>1</type> <value>0.3</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>InstantInitializeMeleeGraph</value> </prop>
+			<prop> <type>1</type> <value>0</value> </prop>
+		</row>
+		<row>
+			<prop> <type>2</type> <value></value> </prop>
+			<prop> <type>2</type> <value>SwimStart_Melee</value> </prop>
+			<prop> <type>1</type> <value>0.3</value> </prop>
+		</row>
+	</property_sheet>
+</root>

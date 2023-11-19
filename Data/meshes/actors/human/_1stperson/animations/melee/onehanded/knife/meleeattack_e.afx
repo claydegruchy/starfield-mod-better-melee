@@ -1,0 +1,14 @@
+<root>
+	<is_state>0</is_state>
+	<tag>MeleeAttack_E</tag>
+	<filename>MeleeAttack_E.af</filename>
+	<rampout>6</rampout>
+	<events>
+		<event><frame>6</frame><name>WeaponSwing</name><payload></payload></event>
+		<event><frame>6</frame><name>PreHitFrame</name><payload></payload></event>
+		<event><frame>11</frame><name>HitFrame</name><payload></payload></event>
+	</events>
+	<audios>
+		<audio><frame>21</frame><foley>WPNMeleeBashHandPKnifeC</foley></audio>
+	</audios>
+</root>

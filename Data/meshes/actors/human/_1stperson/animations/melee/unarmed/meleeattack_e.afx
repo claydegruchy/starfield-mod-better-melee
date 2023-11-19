@@ -1,0 +1,19 @@
+<root>
+	<is_state>0</is_state>
+	<tag>MeleeAttack_E</tag>
+	<filename>MeleeAttack_E.af</filename>
+	<events>
+		<event><frame>0</frame><name>AssignVariable</name><payload>HitReactionTransferVariable=0</payload></event>
+		<event><frame>15</frame><name>WeaponSwing</name><payload></payload></event>
+		<event><frame>15</frame><name>PreHitFrame</name><payload></payload></event>
+		<event><frame>20</frame><name>HitFrame</name><payload></payload></event>
+	</events>
+	<audios>
+		<audio><frame>10</frame><foley>WPNHandUnarmed1stSwingA</foley></audio>
+		<audio><frame>14</frame><foley>WPNHandUnarmed1stSwingB</foley></audio>
+		<audio><frame>42</frame><foley>WPNHandUnarmed1stSwingC</foley></audio>
+	</audios>
+	<variables>
+		<variable><name>bDontAllowBlock</name><start>0</start><end>5</end></variable>
+	</variables>
+</root>

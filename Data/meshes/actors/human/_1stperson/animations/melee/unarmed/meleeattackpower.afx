@@ -1,0 +1,23 @@
+<root>
+	<is_state>0</is_state>
+	<tag>MeleeAttackPower</tag>
+	<filename>MeleeAttackPower.af</filename>
+	<rampout>20</rampout>
+	<flags>
+		<flag>Motion Driven</flag>
+	</flags>
+	<events>
+		<event><frame>0</frame><name>AssignVariable</name><payload>HitReactionTransferVariable=0</payload></event>
+		<event><frame>15</frame><name>WeaponSwing</name><payload></payload></event>
+		<event><frame>20</frame><name>HitFrame</name><payload></payload></event>
+	</events>
+	<audios>
+		<audio><frame>13</frame><foley>WPNHandUnarmed1stSwingA</foley></audio>
+		<audio><frame>15</frame><foley>WPNHandUnarmed1stSwingB</foley></audio>
+		<audio><frame>39</frame><foley>WPNHandUnarmed1stSwingC</foley></audio>
+	</audios>
+	<variables>
+		<variable><name>bDontAllowBlock</name><start>0</start><end>20</end></variable>
+		<variable><name>bAlignWithAimAssistTarget</name><start>0</start><end>22</end></variable>
+	</variables>
+</root>

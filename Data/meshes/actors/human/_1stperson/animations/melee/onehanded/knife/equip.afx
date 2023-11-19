@@ -1,0 +1,13 @@
+<root>
+	<is_state>0</is_state>
+	<tag>Equip</tag>
+	<filename>Equip.af</filename>
+	<rampout>6</rampout>
+	<events>
+		<event><frame>4</frame><name>WeaponDraw</name><payload></payload></event>
+	</events>
+	<variables>
+		<variable><name>bIsEquipping</name><start>0</start><end>5</end></variable>
+		<variable><name>bDontAllowAttack</name><start>0</start><end>5</end></variable>
+	</variables>
+</root>

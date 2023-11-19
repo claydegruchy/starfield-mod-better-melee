@@ -1,0 +1,21 @@
+<root>
+	<is_state>0</is_state>
+	<tag>MeleeAttackPower_A</tag>
+	<filename>MeleeAttackPower_A.af</filename>
+	<rampout>6</rampout>
+	<events>
+		<event><frame>9</frame><name>WeaponSwing</name><payload></payload></event>
+		<event><frame>9</frame><name>PreHitFrame</name><payload></payload></event>
+		<event><frame>14</frame><name>HitFrame</name><payload></payload></event>
+		<event><frame>14</frame><name>AssignVariable</name><payload>HitReactionTransferVariable=1</payload></event>
+	</events>
+	<audios>
+		<audio><frame>40</frame><foley>WPNMeleeBashHandPKnifeB</foley></audio>
+	</audios>
+	<variables>
+		<variable><name>bDontAllowPowerAttack</name><start>0</start><end>60</end></variable>
+		<variable><name>bDontAllowBlock</name><start>0</start><end>5</end></variable>
+		<variable><name>bAlignWithAimAssistTarget</name><start>0</start><end>30</end></variable>
+		<variable><name>bCanComboAttack</name><start>0</start><end>40</end></variable>
+	</variables>
+</root>

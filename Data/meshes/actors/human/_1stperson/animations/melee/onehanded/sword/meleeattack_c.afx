@@ -1,0 +1,28 @@
+<root>
+	<is_state>0</is_state>
+	<tag>MeleeAttack_C</tag>
+	<filename>MeleeAttack_C.af</filename>
+	<rampout>6</rampout>
+	<flags>
+		<flag>Motion Driven</flag>
+	</flags>
+	<events>
+		<event><frame>0</frame><name>AssignVariable</name><payload>HitReactionTransferVariable=0</payload></event>
+		<event><frame>11</frame><name>WeaponSwing</name><payload></payload></event>
+		<event><frame>11</frame><name>PreHitFrame</name><payload></payload></event>
+		<event><frame>16</frame><name>HitFrame</name><payload></payload></event>
+		<event><frame>30</frame><name>AttackStateNextAttack</name><payload></payload></event>
+	</events>
+	<audios>
+		<audio><frame>1</frame><foley>WPNMeleeBashHandPSwordC</foley></audio>
+		<audio><frame>12</frame><foley>WPNMeleeBashHandPSwordA</foley></audio>
+		<audio><frame>16</frame><foley>WPNMeleeBashHandPSwordB</foley></audio>
+		<audio><frame>23</frame><foley>WPNMeleeBashHandPSwordC</foley></audio>
+	</audios>
+	<variables>
+		<variable><name>bDontAllowBlock</name><start>0</start><end>5</end></variable>
+		<variable><name>bDontAllowAttack</name><start>0</start><end>5</end></variable>
+		<variable><name>bDontAllowPowerAttack</name><start>0</start><end>5</end></variable>
+		<variable><name>bAlignWithAimAssistTarget</name><start>0</start><end>30</end></variable>
+	</variables>
+</root>

@@ -1,0 +1,28 @@
+<root>
+	<is_state>0</is_state>
+	<tag>MeleeAttack_A</tag>
+	<filename>MeleeAttack_A.af</filename>
+	<rampout>4</rampout>
+	<flags>
+		<flag>Motion Driven</flag>
+	</flags>
+	<events>
+		<event><frame>0</frame><name>AssignVariable</name><payload>HitReactionTransferVariable=0</payload></event>
+		<event><frame>6</frame><name>WeaponSwing</name><payload></payload></event>
+		<event><frame>6</frame><name>PreHitFrame</name><payload></payload></event>
+		<event><frame>11</frame><name>HitFrame</name><payload></payload></event>
+		<event><frame>23</frame><name>AttackStateNextAttack</name><payload></payload></event>
+	</events>
+	<audios>
+		<audio><frame>8</frame><foley>WPNHandUnarmed1stSwingA</foley></audio>
+		<audio><frame>13</frame><foley>WPNHandUnarmed1stSwingB</foley></audio>
+		<audio><frame>22</frame><foley>WPNHandUnarmed1stSwingC</foley></audio>
+	</audios>
+	<variables>
+		<variable><name>bDontAllowAttack</name><start>0</start><end>6</end></variable>
+		<variable><name>bDontAllowBlock</name><start>0</start><end>5</end></variable>
+		<variable><name>bDontAllowPowerAttack</name><start>0</start><end>15</end></variable>
+		<variable><name>bAlignWithAimAssistTarget</name><start>0</start><end>30</end></variable>
+		<variable><name>bCanComboAttack</name><start>6</start><end>23</end></variable>
+	</variables>
+</root>

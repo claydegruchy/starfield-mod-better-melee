@@ -1,0 +1,17 @@
+<root>
+	<is_state>0</is_state>
+	<tag>MeleeAttackPower_B</tag>
+	<filename>MeleeAttackPower_B.af</filename>
+	<rampout>6</rampout>
+	<events>
+		<event><frame>7</frame><name>WeaponSwing</name><payload></payload></event>
+		<event><frame>7</frame><name>PreHitFrame</name><payload></payload></event>
+		<event><frame>12</frame><name>HitFrame</name><payload></payload></event>
+	</events>
+	<audios>
+		<audio><frame>30</frame><foley>WPNMeleeBashHandPKnifeB</foley></audio>
+	</audios>
+	<variables>
+		<variable><name>bDontAllowPowerAttack</name><start>0</start><end>46</end></variable>
+	</variables>
+</root>

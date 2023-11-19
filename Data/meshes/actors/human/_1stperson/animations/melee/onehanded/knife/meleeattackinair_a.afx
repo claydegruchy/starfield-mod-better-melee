@@ -1,0 +1,19 @@
+<root>
+	<is_state>0</is_state>
+	<tag>MeleeAttackInAir_A</tag>
+	<filename>MeleeAttackInAir_A.af</filename>
+	<rampout>6</rampout>
+	<events>
+		<event><frame>0</frame><name>AssignVariable</name><payload>HitReactionTransferVariable=2</payload></event>
+		<event><frame>9</frame><name>WeaponSwing</name><payload></payload></event>
+		<event><frame>9</frame><name>PreHitFrame</name><payload></payload></event>
+		<event><frame>14</frame><name>HitFrame</name><payload></payload></event>
+	</events>
+	<audios>
+		<audio><frame>24</frame><foley>WPNMeleeBashHandPKnifeC</foley></audio>
+	</audios>
+	<variables>
+		<variable><name>bDontAllowBlock</name><start>0</start><end>30</end></variable>
+		<variable><name>bAlignWithAimAssistTarget</name><start>0</start><end>30</end></variable>
+	</variables>
+</root>
